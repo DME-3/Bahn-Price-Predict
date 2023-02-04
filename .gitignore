@@ -1,0 +1,5 @@
+random_forest_prices_model_140123_1.pkl
+models/
+price_df/
+JSON_to_CSV.ipynb
+DB_process_CSV_predict_prices.ipynb
