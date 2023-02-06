@@ -102,6 +102,12 @@ app.layout = html.Div([
         html.Br(),
         dbc.Spinner(dcc.Graph(id="graph", config={'displayModeBar': False, 'scrollZoom': False})),
         dbc.Spinner(html.Div(id="output-test")),
+        html.Br(),
+        dbc.Row([
+            dbc.Col(html.A('GitHub', href='https://github.com/DME-3/Bahn-Price-Predict', target='_blank'), width=3)
+        ],
+        style={'margin-left':'0px','margin-right':'0px'},
+        justify='start')
     ]),
 ])
 
