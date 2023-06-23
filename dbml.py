@@ -22,7 +22,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.SLATE], title='DB Price Predict
 datetimeNow = datetime.datetime.now()
 
 path = '/home/dme3/Bahn-Price-Predict/' if os.getenv('PYTHONANYWHERE_SITE') else './'
-model_from_joblib = joblib.load(path + 'models/random_forest_prices_model_010323_1.pkl')
+model_from_joblib = joblib.load(path + 'models/random_forest_prices_model_230623_2.pkl')
 
 def get_holidays(date, time):
     weekday = None
