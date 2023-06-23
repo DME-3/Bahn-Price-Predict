@@ -79,7 +79,7 @@ app.layout = html.Div([
             The user must enter the travel date and time (the direction Cologne/Brussels or Brussels/Cologne does not matter). The price prediction chart will then be calculated when hitting the 'Predict!' button.
         '''),
         html.Br(),
-        html.P('Model date: 010323 - Training data: Dec. 22 - Feb. 23'),
+        html.P('Model date: 230623 - Training data: 1 Apr. 23 - 22 Jun. 23'),
         html.Br(),
         dmc.Stack(
             children=[
