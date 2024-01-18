@@ -2,3 +2,5 @@ random_forest_prices_model_140123_1.pkl
 models/
 price_df/
 JSON_to_CSV.ipynb
+CSV_to_use/
+random_forest_prices_model_180124_1.pkl

@@ -22,7 +22,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.SLATE], title='DB Price Predict
 datetimeNow = datetime.datetime.now()
 
 path = '/home/dme3/Bahn-Price-Predict/' if os.getenv('PYTHONANYWHERE_SITE') else './'
-model_from_joblib = joblib.load(path + 'models/random_forest_prices_model_230623_2.pkl')
+model_from_joblib = joblib.load(path + 'models/random_forest_prices_model_180124_1.pkl')
 
 def get_holidays(date, time):
     weekday = None
@@ -41,7 +41,7 @@ def get_holidays(date, time):
     hour = time.hour
 
     # Read the holidays.csv file and look for the date
-    with open(path + 'holidays-BE_DE-2022-2023.csv', 'r') as f:
+    with open(path + 'holidays-BE_DE-2023-2024.csv', 'r') as f:
         reader = csv.reader(f)
         next(reader)  # Skip the header row
         for row in reader:
@@ -79,7 +79,7 @@ app.layout = html.Div([
             The user must enter the travel date and time (the direction Cologne/Brussels or Brussels/Cologne does not matter). The price prediction chart will then be calculated when hitting the 'Predict!' button.
         '''),
         html.Br(),
-        html.P('Model date: 230623 - Training data: 1 Apr. 23 - 22 Jun. 23'),
+        html.P('Model date: 180124 - Training data: 1 Oct. 23 - 31 Dec. 23'),
         html.Br(),
         dmc.Stack(
             children=[
